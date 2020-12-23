@@ -110,31 +110,18 @@
 					display: none
 	.header .container-fluid li 
 		margin-left: 0
-	.logo 
-		left: 50%
-		transform: translateX(-50%) translateY(50%)
-		z-index: 99
-		bottom: 0
-		background: linear-gradient(to top, $red 0%, $red 50.75%, #ffff 51.75%, #ffff 100%)
-		padding: 0.623vw
-		border-radius: 50%
+	.header 
+		.container-fluid 
+			border-bottom: 2px solid $red
+	.logo
+		padding: 2px
+		left: 0
+		bottom: -0.3px		
 		img 
-			width: 20.872vw
-
+			width: 20vw
 	.header-line
 		display: none
-	.header 
-		.container-fluid:before 
-			content: '' 
-			background: $red 
-			width: 100% 
-			height: 0.623vw
-			bottom: 0
-			position: absolute 
-			bottom: 0 
-			left: 0
-			transform: translateY(50%)
-			border-radius: 50%
+
 	.header__menu-btn
 		display: block
 		.btn-row
@@ -270,15 +257,13 @@
 	.recipes__content-text
 		padding: 10.625vw
 	.footer-logo 
-		width: 21.875vw
 		margin-left: 0
-		padding: 1px
+		padding: 2px
+		margin-top: -2px
 		img 
-			width: 100%
-			transform: translateX(-0.5px)
-	.footer-line
-		height: 3px
-		top: -0.4px
+			width: 20vw
+	.footer .container-fluid 
+		border-top: 2px solid $red
 	.footer__menu
 		flex-wrap: wrap
 		.footer__menu-col

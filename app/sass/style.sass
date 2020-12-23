@@ -37,6 +37,7 @@ p
 	max-width: 95vw
 	padding-left: 0 
 	padding-right: 0
+	
 .button 
 	width: 250px
 	display: flex 
@@ -77,6 +78,7 @@ p
 		align-items: center
 		position: relative
 		padding: 25px 0
+		border-bottom: 3px solid $red
 		li 
 			margin-left: 65px
 			position: relative
@@ -119,7 +121,11 @@ p
 .logo 
 	position: absolute
 	left: 21px
-	bottom: -83px
+	padding: 3px
+	bottom: 0px
+	transform: translateY(50%)
+	background: linear-gradient(to top, $red 0%, $red 50%, #ffff 50%, #ffff 100%)
+	border-radius: 50%
 	
 	a 	
 		display: block
@@ -451,25 +457,18 @@ p
 	
 	.container-fluid 
 		position: relative
+		border-top: 3px solid $red
 .footer-logo
 	transform: translateY(-50%)
-	margin-left: 15px
+	margin-left: 21px
 	display: inline-block
-	padding: 2px
+	padding: 3px
 	border-radius: 50%
-	background: linear-gradient(to top, $red 0%, $red 49.5%, #ffff 50.5%, #ffff 100%)
+	margin-top: -3px
+	background: linear-gradient(to top, $red 0%, $red 50%, #ffff 50%, #ffff 100%)
 	img 
-		transform: translateX(-1px)
-.footer-line
-	position: absolute
-	left: 0 
-	top: 0 
-	height: 5px
-	background: $red
-	width: 100%
-	display: block
-	border-radius: 50%
-	top: -0.5px
+		
+
 .footer-content
 	display: flex
 	justify-content: space-between 
