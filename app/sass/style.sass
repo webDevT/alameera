@@ -751,7 +751,162 @@ p
 .checkbox-wrapper
 	display: flex 
 	align-items: center	
+.recipe-image
+	width: 100%
+.recipe-page
+	padding-bottom: 83px
+.recipe-tab-wrapper
+	margin-top: 50px
+.recipe-tab-wrapper
+	width: 980px 
+	max-width: 100% 
+	margin: 0 auto
+.recipe-tab
+	text-align: center
+	color: rgba(45, 45, 45, 0.502)
+	cursor: pointer
+.slider-recipe .slick-slide.active .recipe-tab
+	color: rgb(45, 45, 45)
+.recipe-tab-wrapper
+	position: relative
+	padding: 0 50px
+	margin-top: 50px
+	margin-bottom: 57px
+.prev,
+.next 
+	cursor: pointer
+.prev 
+	position: absolute
+	left: 0
+	top: 0
+.next 
+	position: absolute
+	top: 0 
+	right: 0
+.recipe-tab-item
+	display: none 
 
+.recipe-tab-item:first-child
+	display: block
+.recipe-tab
+	position: relative
+.recipe-tab:before 
+	content: ''
+	position: absolute
+	width: 1px 
+	height: 13px 
+	background: #e3e3e3
+	top: 4px
+	right: -1px
+.recipe-page__header
+	text-align: center
+	margin-bottom: 56px
+	h1 
+		margin-bottom: 30px
+.recipe-page__content
+	width: 756px
+	margin: 0 auto
+.recipe-page__content-items
+	display: flex
+	margin-bottom: 67px
+.ingredients
+	background: $red
+	width: 50%
+	border-radius: 10px
+	padding: 50px
+	transform: translateX(5px)
+	position: relative
+	z-index: 1
+	color: #fff
+	h2 
+		color: #fff
+	ul 
+		flex-direction: column
+		li 
+			margin-bottom: 3px
+.dressing
+	background: #f3f0ed
+	width: 50%
+	border-top-right-radius: 10px
+	border-bottom-right-radius: 10px
+	padding: 50px
+	transform: translateX(-5px)
+	ul 
+		flex-direction: column
+		li 
+			margin-bottom: 3px
+	h2 
+		color: $red
+.recipe-sub-title
+	text-transform: uppercase
+	font-size: 12px 
+	font-weight: 700
+	padding-bottom: 5px
+	border-bottom: 2px solid $red
+	display: inline-block
+	margin-bottom: 18px
+.time-item
+	font-size: 20px
+	color: rgb(45, 45, 45)
+.direction p 
+	margin-bottom: 25px
+.recipe-page__header
+	p 
+		max-width: 480px
+		margin: 0 auto
+.other-recipes
+	padding-bottom: 120px
+	h2 
+		text-align: center
+		padding-bottom: 60px
+
+.othe-recipe__item
+	background: $red
+.othe-recipes__slider
+	width: 980px
+	margin: 0 auto
+.othe-recipes__slider-item
+	padding: 0 20px
+	margin-bottom: 30px
+	outline: none
+
+	
+	img 
+		width: 100%
+.othe-recipe__item
+	border-radius: 10px
+	padding-bottom: 6px
+.othe-recipe__content
+	background: #f3f0ed
+.othe-recipe__title
+	padding-top: 25px
+	text-align: center
+	color: rgb(45, 45, 45)
+	font-weight: 700
+	font-size: 20px
+	min-height: 90px
+	display: flex 
+	align-items: center
+	justify-content: center
+.othe-recipe__button
+	background: #fff
+	margin: 0 auto
+	transform: translateY(50%)
+.other-recipes__wrapper
+	position: relative
+	width: 1130px
+	max-width: 100% 
+	margin: 0 auto
+.prev1 
+	position: absolute 
+	top: 85px 
+	left: 0
+	cursor: pointer
+.next1 
+	position: absolute 
+	top: 85px 
+	right: 0
+	cursor: pointer
 
 
 @import "media"

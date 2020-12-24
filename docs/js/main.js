@@ -11,6 +11,10 @@ $('.header__menu-btn').click(function(){
 })
 //end  open-close mobile menu
 
+$(".slider-recipe .slick-slide").click(function() {;
+  $(".slider-recipe .slick-slide").removeClass("active").eq($(this).index()).addClass("active");
+  $(".recipe-tab-item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
 $.lazyLoadXT.onload.addClass = "animated fadeIn";
 
@@ -46,6 +50,59 @@ responsive: [
 
 
 });
+
+ $('.slider-recipe').slick({
+
+slidesToShow: 4,
+infinite: false,
+prevArrow: $('.prev'),
+nextArrow: $('.next'),
+responsive: [
+   {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 1,
+    }
+  },
+   {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+    }
+  },
+
+  ]
+
+
+
+});
+
+ $('.othe-recipes__slider').slick({
+
+slidesToShow: 3,
+infinite: false,
+prevArrow: $('.prev1'),
+nextArrow: $('.next1'),
+responsive: [
+   {
+    breakpoint: 1130,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+   {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+    }
+  },
+
+  ]
+
+
+
+});
+
 
 if($(window).width() < 700) {
 $(function(){
