@@ -17,6 +17,13 @@
 	/**/
 	h3 
 		font-size: 17px
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1130px)
+	/**/
+	.vision,
+	.mission
+		padding: 30px 40px 85px 40px
+
 
 
 /* Medium Devices, Desktops */
@@ -57,6 +64,47 @@
 	.footer__menu
 		.footer__menu-col
 			margin-bottom: 39px
+	.about-logo
+		display: none
+	.about-info
+		flex-direction: column
+		top: 0
+	.vision,
+	.mission
+		width: 100%
+		margin-left: 0 
+		margin-right: 0
+		margin-top: 3vw
+		padding: 0vw
+		height: auto
+		border-radius: 10px
+	.vision
+		background: #19163c
+		padding-bottom: 3vw
+	.vision-wrapper
+		width: 100% 
+		height: 100%
+		background: $red
+		padding: 7vw 7vw
+		border-radius: 10px
+	.vision-mission__item--righ
+		text-align: left
+
+	.vision-mission__icon
+		height: 20vw
+		img 
+			width: 15vw
+	.mission
+		background: $red
+		padding-bottom: 3vw
+		margin-bottom: 3vw
+	.mission-wrapper
+		background: #f3f0ed
+		padding: 7vw 7vw
+		border-radius: 10px
+	.vision-mission__icon--right
+		justify-content: flex-start
+		align-items: center
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
@@ -73,6 +121,8 @@
 		background: #fff
 		padding: 0 3vw
 		padding-top: 40px
+		margin-top: 2px
+		z-index: 998
 
 		ul 
 			flex-direction: column
@@ -116,7 +166,8 @@
 	.logo
 		padding: 2px
 		left: 0
-		bottom: -0.3px		
+		bottom: -0.3px
+		z-index: 999		
 		img 
 			width: 20vw
 	.header-line

@@ -22,6 +22,7 @@ h1
 	font-weight: 700
 	margin-bottom: 0
 	color: $title-color
+	line-height: 1
 h2 
 	font-size: 40px 
 	font-weight: 700
@@ -126,6 +127,7 @@ p
 	transform: translateY(50%)
 	background: linear-gradient(to top, $red 0%, $red 50%, #ffff 50%, #ffff 100%)
 	border-radius: 50%
+	z-index: 999
 	
 	a 	
 		display: block
@@ -502,6 +504,57 @@ p
 
 .fadeIn
 	animation-name: fadeIn
+.about-info	
+	width: 980px
+	max-width: 100% 
+	margin: 0 auto 
+	display: flex
+	justify-content: center
+	position: relative
+	top: -100px
+.vision,
+.mission 
+	padding: 30px 60px 85px 60px
+.vision 
+	width: 480px 
+	height: 353px
+	background: url('../img/vision.png')
+	background-size: 100% 
+	background-repeat: no-repeat
+	margin-right: 10px
+	
+
+	//clip-path: ellipse(25% 33% at 98% 0%)
+
+
+.mission 
+	width: 480px 
+	height: 353px
+	background: url('../img/mission.png')
+	background-size: 100% 
+	background-repeat: no-repeat
+	margin-left: 10px
+.about-logo
+	position: absolute
+	top: 0 
+	left: 50% 
+	transform: translateX(-50%) translateY(-50%)
+.vision-mission__item--righ
+	text-align: right
+	color: #fff
+	h2 
+		color: #fff
+.vision-mission__icon
+	height: 100px
+.vision-mission__icon--right
+	display: flex 
+	justify-content: flex-end
+		
+
+
+
+
+  
 @import "media"
 
 
