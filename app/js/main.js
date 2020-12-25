@@ -18,8 +18,15 @@ $(".slider-recipe .slick-slide").click(function() {;
 
 $.lazyLoadXT.onload.addClass = "animated fadeIn";
 
+$(".halawa-tab").click(function() {
+  $(".halawa-tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".halawa-tab-item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
-
+$(".product-recipe-tab").click(function() {
+  $(".product-recipe-tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".product-recipe-tab-item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
 
  $('.slider').slick({
